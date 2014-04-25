@@ -1,0 +1,154 @@
+body{
+	background-color: #CCCCCC;
+}
+
+a{
+	text-decoration: none;
+}
+
+/******* MENU ********/
+
+nav ul {
+	list-style: none;
+	margin: 0;
+}
+
+nav ul#menu li {
+	float: left;
+}
+
+nav #menu a {
+  background: #888888;
+  border-right: 1px solid rgba(0, 0, 0, 0.5);
+  color: #fff;
+  display: block;
+  font-size: 13px;
+  font-weight: bold;
+  padding: 0 20px;
+  line-height: 40px;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.6);
+  text-transform: uppercase;
+}
+
+nav  #menu a:hover {
+  background: #CC5639;
+  color: #FFF;
+}
+
+nav li:first-child a {
+  border-left: none;
+  border-radius: 4px 0 0 4px;
+}
+
+nav li:last-child a {
+  border-right: none;
+  border-radius: 0 4px 4px 0;
+}
+
+nav ul#menu li{
+    float:left;
+    position:relative;
+}
+
+nav ul#menu ul{
+    position:absolute;
+    left:0;
+    display:none;
+}
+	
+nav ul#menu li:hover ul{
+    display:block;
+}
+
+/******* HEADER ********/
+
+#header{
+	background-color: black;
+	height: 180px;
+}
+
+#headerText{
+	font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	line-height: 20px;
+	color:#FFF;
+}
+
+#header img{
+	float: left;
+	height: 150px;
+	width: 300px;
+	padding: 15px;
+}
+
+/******* MAIN CONTENT ********/
+
+article{
+	clear:both;
+}
+
+article h1{
+	color:#CC5639;
+	text-align:center;
+	font-size:45px;
+	padding:10px;
+}
+
+article p{
+	text-align:left;
+	color:#555;
+	font-size:15px;
+	padding:10px;
+}
+
+.contentImage{
+	float: left;
+	margin: 20px;
+	border: solid 3px #777777;
+	width:200px;
+	height:200px;
+}
+
+/******* FOOTER ********/
+
+#footer{
+	clear:both;
+	height: 120px;
+	font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+	color: #FFF;
+	background-color: black;
+	padding: 20px;
+}
+
+#footer a{
+	color: #fff;
+}
+
+.footer-content{
+	text-align: center;
+}
+
+/******* CONTACT FORM ********/
+
+.contact{
+	width: 500px;
+	margin: 50px;
+}
+
+.contact label{
+	display:block;
+	margin-bottom:5px;
+	position:relative;
+}
+
+.contact input{
+	width: 484px;
+	border: solid 2px #333333;
+	margin-bottom:5px;
+}
+
+.contact textarea{
+	width: 484px;
+	border: solid 2px #333333;
+}
+
