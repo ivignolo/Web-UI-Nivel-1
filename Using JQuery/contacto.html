@@ -4,30 +4,31 @@
     <meta charset="utf-8">
     <title>SMS Audio</title>
     <link rel="stylesheet" type="text/css" href="general.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   </head>
   <body>
 	<script type="text/javascript">
 		function validateForm(){
 			error = false;
-			if(document.getElementById("name").value == null || document.getElementById("name").value == ''){
+			if($('#name').val() == null || $('#name').val() == ''){
 				error = true;
 			}
-			if(document.getElementById('email').value == null || document.getElementById("name").value == ''){
+			if($('#email').val() == null || $('#email').val() == ''){
 				error = true;
 			}
-			if(document.getElementById('phone').value == null || document.getElementById("phone").value == ''){
+			if($('#phone').val() == null || $('#phone').val() == ''){
 				error = true;
 			}
-			if(document.getElementById('message').value == null || document.getElementById("message").value == ''){
+			if($('#message').val() == null || $('#message').val() == ''){
 				error = true;
 			}
 			if(error){
-				document.getElementById('msgPanelError').style.display = '';
-				document.getElementById('msgPanelSuccess').style.display = 'none';
+				$('#msgPanelError').show();
+				$('#msgPanelSuccess').hide();
 				return false;
 			}else{
-				document.getElementById('msgPanelSuccess').style.display = '';
-				document.getElementById('msgPanelError').style.display = 'none';
+				$('#msgPanelSuccess').show();
+				$('#msgPanelError').hide();
 				return true;
 			}
 		}
